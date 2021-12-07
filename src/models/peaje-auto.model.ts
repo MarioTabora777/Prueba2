@@ -1,21 +1,16 @@
-import {Model, model, property} from '@loopback/repository';
+import {Entity, model, property} from '@loopback/repository';
 
 @model()
-export class PeajeAuto extends Model {
+export class PeajeAuto extends Entity {
   @property({
     type: 'string',
   })
-  PlacaAuto?: string;
+  placaAuto?: string;
 
   @property({
     type: 'string',
   })
-  TipoAuto?: string;
-
-  @property({
-    type: 'number',
-  })
-  MontoPagar?: number;
+  tipoAuto?: string;
 
   @property({
     type: 'string',
